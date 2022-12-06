@@ -2,11 +2,10 @@
 //  CleanSwiftUITests.swift
 //  CleanSwiftUITests
 //
-//  Created by Rob Broadwell on 10/11/22.
+//  Created by Rob Broadwell on 12/6/22.
 //
 
 import XCTest
-@testable import CleanSwiftUI
 
 final class CleanSwiftUITests: XCTestCase {
 
@@ -28,7 +27,7 @@ final class CleanSwiftUITests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
