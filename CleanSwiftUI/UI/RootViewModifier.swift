@@ -17,7 +17,7 @@ struct RootViewAppearance: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .blur(radius: viewModel.isActive ? 0 : 10)
+//            .blur(radius: viewModel.isActive ? 0 : 10)
             .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
     }
 }

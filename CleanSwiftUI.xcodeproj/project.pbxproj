@@ -26,12 +26,6 @@
 		D433AD3528FC2F1F0041CD47 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD3428FC2F1F0041CD47 /* DependencyInjector.swift */; };
 		D433AD3728FC2F320041CD47 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD3628FC2F320041CD47 /* AppState.swift */; };
 		D433AD3928FC2F430041CD47 /* ServicesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD3828FC2F430041CD47 /* ServicesContainer.swift */; };
-		D433AD3E28FC2FFA0041CD47 /* BloombergService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD3D28FC2FFA0041CD47 /* BloombergService.swift */; };
-		D433AD4028FC30020041CD47 /* YahooFinanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD3F28FC30020041CD47 /* YahooFinanceService.swift */; };
-		D433AD4328FC309A0041CD47 /* BloombergDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD4228FC309A0041CD47 /* BloombergDBRepository.swift */; };
-		D433AD4528FC30A90041CD47 /* BloombergWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD4428FC30A90041CD47 /* BloombergWebRepository.swift */; };
-		D433AD4728FC30BB0041CD47 /* YahooFinanceDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD4628FC30BB0041CD47 /* YahooFinanceDBRepository.swift */; };
-		D433AD4928FC30C40041CD47 /* YahooFinanceWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD4828FC30C40041CD47 /* YahooFinanceWebRepository.swift */; };
 		D433AD4B28FC31B40041CD47 /* LazyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD4A28FC31B40041CD47 /* LazyList.swift */; };
 		D433AD4D28FC31C20041CD47 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD4C28FC31C20041CD47 /* APICall.swift */; };
 		D433AD4F28FC31D30041CD47 /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD4E28FC31D30041CD47 /* WebRepository.swift */; };
@@ -44,10 +38,6 @@
 		D433AD6128FC35720041CD47 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD6028FC35720041CD47 /* SystemEventsHandler.swift */; };
 		D433AD6328FC35910041CD47 /* PushTokenWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD6228FC35910041CD47 /* PushTokenWebRepository.swift */; };
 		D433AD6628FC368A0041CD47 /* RootViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD6528FC368A0041CD47 /* RootViewModifier.swift */; };
-		D433AD6C28FC36D40041CD47 /* BloombergView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD6B28FC36D40041CD47 /* BloombergView.swift */; };
-		D433AD6E28FC36DC0041CD47 /* YahooFinanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD6D28FC36DC0041CD47 /* YahooFinanceView.swift */; };
-		D433AD7028FC37530041CD47 /* YahooFinanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD6F28FC37530041CD47 /* YahooFinanceViewModel.swift */; };
-		D433AD7228FC37940041CD47 /* BloombergViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD7128FC37940041CD47 /* BloombergViewModel.swift */; };
 		D433AD7A28FC39C90041CD47 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD7928FC39C90041CD47 /* CoreDataStack.swift */; };
 		D433AD7C28FC39D80041CD47 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433AD7B28FC39D80041CD47 /* CoreDataHelpers.swift */; };
 		D478B05F28F56F55006333DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D478B05E28F56F55006333DB /* ContentView.swift */; };
@@ -62,6 +52,14 @@
 		D4F1FCD7293FA60B00BBFCB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCD6293FA60B00BBFCB2 /* SceneDelegate.swift */; };
 		D4F1FCD9293FA69800BBFCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCD8293FA69800BBFCB2 /* AppDelegate.swift */; };
 		D4F1FCDB293FA9AB00BBFCB2 /* ApplicationMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCDA293FA9AB00BBFCB2 /* ApplicationMain.swift */; };
+		D4F1FCDF293FAD7900BBFCB2 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCDE293FAD7900BBFCB2 /* CountryDetails.swift */; };
+		D4F1FCE1293FAD8100BBFCB2 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCE0293FAD8100BBFCB2 /* CountryDetailsViewModel.swift */; };
+		D4F1FCE3293FAD8B00BBFCB2 /* CountriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCE2293FAD8B00BBFCB2 /* CountriesList.swift */; };
+		D4F1FCE5293FAD9300BBFCB2 /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCE4293FAD9300BBFCB2 /* CountriesListViewModel.swift */; };
+		D4F1FCE7293FADE400BBFCB2 /* ModalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCE6293FADE400BBFCB2 /* ModalDetailsView.swift */; };
+		D4F1FCE9293FADFE00BBFCB2 /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCE8293FADFE00BBFCB2 /* CountriesService.swift */; };
+		D4F1FCEB293FAE2700BBFCB2 /* CountriesDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCEA293FAE2700BBFCB2 /* CountriesDBRepository.swift */; };
+		D4F1FCED293FAE3B00BBFCB2 /* CountriesWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCEC293FAE3B00BBFCB2 /* CountriesWebRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,12 +99,6 @@
 		D433AD3428FC2F1F0041CD47 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
 		D433AD3628FC2F320041CD47 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D433AD3828FC2F430041CD47 /* ServicesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesContainer.swift; sourceTree = "<group>"; };
-		D433AD3D28FC2FFA0041CD47 /* BloombergService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloombergService.swift; sourceTree = "<group>"; };
-		D433AD3F28FC30020041CD47 /* YahooFinanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceService.swift; sourceTree = "<group>"; };
-		D433AD4228FC309A0041CD47 /* BloombergDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloombergDBRepository.swift; sourceTree = "<group>"; };
-		D433AD4428FC30A90041CD47 /* BloombergWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloombergWebRepository.swift; sourceTree = "<group>"; };
-		D433AD4628FC30BB0041CD47 /* YahooFinanceDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceDBRepository.swift; sourceTree = "<group>"; };
-		D433AD4828FC30C40041CD47 /* YahooFinanceWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceWebRepository.swift; sourceTree = "<group>"; };
 		D433AD4A28FC31B40041CD47 /* LazyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyList.swift; sourceTree = "<group>"; };
 		D433AD4C28FC31C20041CD47 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		D433AD4E28FC31D30041CD47 /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
@@ -119,10 +111,6 @@
 		D433AD6028FC35720041CD47 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
 		D433AD6228FC35910041CD47 /* PushTokenWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTokenWebRepository.swift; sourceTree = "<group>"; };
 		D433AD6528FC368A0041CD47 /* RootViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModifier.swift; sourceTree = "<group>"; };
-		D433AD6B28FC36D40041CD47 /* BloombergView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloombergView.swift; sourceTree = "<group>"; };
-		D433AD6D28FC36DC0041CD47 /* YahooFinanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceView.swift; sourceTree = "<group>"; };
-		D433AD6F28FC37530041CD47 /* YahooFinanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceViewModel.swift; sourceTree = "<group>"; };
-		D433AD7128FC37940041CD47 /* BloombergViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloombergViewModel.swift; sourceTree = "<group>"; };
 		D433AD7928FC39C90041CD47 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D433AD7B28FC39D80041CD47 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 		D478B05928F56F55006333DB /* CleanSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +126,14 @@
 		D4F1FCD6293FA60B00BBFCB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D4F1FCD8293FA69800BBFCB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F1FCDA293FA9AB00BBFCB2 /* ApplicationMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMain.swift; sourceTree = "<group>"; };
+		D4F1FCDE293FAD7900BBFCB2 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		D4F1FCE0293FAD8100BBFCB2 /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
+		D4F1FCE2293FAD8B00BBFCB2 /* CountriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesList.swift; sourceTree = "<group>"; };
+		D4F1FCE4293FAD9300BBFCB2 /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
+		D4F1FCE6293FADE400BBFCB2 /* ModalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailsView.swift; sourceTree = "<group>"; };
+		D4F1FCE8293FADFE00BBFCB2 /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
+		D4F1FCEA293FAE2700BBFCB2 /* CountriesDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDBRepository.swift; sourceTree = "<group>"; };
+		D4F1FCEC293FAE3B00BBFCB2 /* CountriesWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWebRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,10 +216,9 @@
 		D433AD3A28FC2F600041CD47 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D433AD3D28FC2FFA0041CD47 /* BloombergService.swift */,
-				D433AD3F28FC30020041CD47 /* YahooFinanceService.swift */,
-				D433AD5628FC32800041CD47 /* UserPermissionsService.swift */,
+				D4F1FCE8293FADFE00BBFCB2 /* CountriesService.swift */,
 				D418BFEB28FD9BC000263341 /* ImagesService.swift */,
+				D433AD5628FC32800041CD47 /* UserPermissionsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -231,12 +226,10 @@
 		D433AD4128FC30840041CD47 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				D433AD4228FC309A0041CD47 /* BloombergDBRepository.swift */,
-				D433AD4428FC30A90041CD47 /* BloombergWebRepository.swift */,
-				D433AD4628FC30BB0041CD47 /* YahooFinanceDBRepository.swift */,
-				D433AD4828FC30C40041CD47 /* YahooFinanceWebRepository.swift */,
+				D4F1FCEA293FAE2700BBFCB2 /* CountriesDBRepository.swift */,
 				D433AD6228FC35910041CD47 /* PushTokenWebRepository.swift */,
 				D418BFED28FD9BD600263341 /* ImageWebRepository.swift */,
+				D4F1FCEC293FAE3B00BBFCB2 /* CountriesWebRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -288,28 +281,11 @@
 			isa = PBXGroup;
 			children = (
 				D478B05E28F56F55006333DB /* ContentView.swift */,
-				D433AD6A28FC36C70041CD47 /* YahooFinance */,
-				D433AD6928FC36C30041CD47 /* Bloomberg */,
+				D4F1FCDC293FAD5200BBFCB2 /* CountriesList */,
+				D4F1FCDD293FAD5D00BBFCB2 /* CountryDetails */,
+				D4F1FCE6293FADE400BBFCB2 /* ModalDetailsView.swift */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		D433AD6928FC36C30041CD47 /* Bloomberg */ = {
-			isa = PBXGroup;
-			children = (
-				D433AD6B28FC36D40041CD47 /* BloombergView.swift */,
-				D433AD7128FC37940041CD47 /* BloombergViewModel.swift */,
-			);
-			path = Bloomberg;
-			sourceTree = "<group>";
-		};
-		D433AD6A28FC36C70041CD47 /* YahooFinance */ = {
-			isa = PBXGroup;
-			children = (
-				D433AD6D28FC36DC0041CD47 /* YahooFinanceView.swift */,
-				D433AD6F28FC37530041CD47 /* YahooFinanceViewModel.swift */,
-			);
-			path = YahooFinance;
 			sourceTree = "<group>";
 		};
 		D478B05028F56F54006333DB = {
@@ -340,8 +316,8 @@
 				D433AD5828FC34F60041CD47 /* System */,
 				D433AD3228FC2EE60041CD47 /* Utilities */,
 				D433AD3328FC2F120041CD47 /* Injected */,
-				D433AD3A28FC2F600041CD47 /* Services */,
 				D433AD4128FC30840041CD47 /* Repositories */,
+				D433AD3A28FC2F600041CD47 /* Services */,
 				D433AD5B28FC352D0041CD47 /* Persistence */,
 				D433AD6428FC36770041CD47 /* UI */,
 				D433AD5928FC35050041CD47 /* Resources */,
@@ -372,6 +348,24 @@
 				D4D69286293FA11B00D6ADBC /* CleanSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = CleanSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		D4F1FCDC293FAD5200BBFCB2 /* CountriesList */ = {
+			isa = PBXGroup;
+			children = (
+				D4F1FCE2293FAD8B00BBFCB2 /* CountriesList.swift */,
+				D4F1FCE4293FAD9300BBFCB2 /* CountriesListViewModel.swift */,
+			);
+			path = CountriesList;
+			sourceTree = "<group>";
+		};
+		D4F1FCDD293FAD5D00BBFCB2 /* CountryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D4F1FCDE293FAD7900BBFCB2 /* CountryDetails.swift */,
+				D4F1FCE0293FAD8100BBFCB2 /* CountryDetailsViewModel.swift */,
+			);
+			path = CountryDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,48 +508,46 @@
 				D433AD2A28FC2DE40041CD47 /* AppEnvironment.swift in Sources */,
 				D433AD6128FC35720041CD47 /* SystemEventsHandler.swift in Sources */,
 				D433AD5F28FC355E0041CD47 /* DeepLinksHandler.swift in Sources */,
+				D4F1FCE3293FAD8B00BBFCB2 /* CountriesList.swift in Sources */,
 				D433AD3728FC2F320041CD47 /* AppState.swift in Sources */,
 				D418BFEC28FD9BC000263341 /* ImagesService.swift in Sources */,
-				D433AD6C28FC36D40041CD47 /* BloombergView.swift in Sources */,
 				D418BFD828FD99E500263341 /* Models+CoreData.swift in Sources */,
 				D433AD3528FC2F1F0041CD47 /* DependencyInjector.swift in Sources */,
 				D433AD6328FC35910041CD47 /* PushTokenWebRepository.swift in Sources */,
-				D433AD6E28FC36DC0041CD47 /* YahooFinanceView.swift in Sources */,
 				D433AD5728FC32800041CD47 /* UserPermissionsService.swift in Sources */,
 				D4F1FCD9293FA69800BBFCB2 /* AppDelegate.swift in Sources */,
-				D433AD4728FC30BB0041CD47 /* YahooFinanceDBRepository.swift in Sources */,
+				D4F1FCED293FAE3B00BBFCB2 /* CountriesWebRepository.swift in Sources */,
 				D418BFE828FD9B9B00263341 /* ImageView.swift in Sources */,
 				D418BFE628FD9B8D00263341 /* ActivityIndicatorView.swift in Sources */,
+				D4F1FCE7293FADE400BBFCB2 /* ModalDetailsView.swift in Sources */,
 				D418BFDD28FD9A3100263341 /* db_model_v1.xcdatamodeld in Sources */,
+				D4F1FCEB293FAE2700BBFCB2 /* CountriesDBRepository.swift in Sources */,
 				D433AD6628FC368A0041CD47 /* RootViewModifier.swift in Sources */,
 				D433AD2F28FC2ECC0041CD47 /* Loadable.swift in Sources */,
 				D418BFE428FD9B7E00263341 /* ErrorView.swift in Sources */,
 				D433AD3128FC2EDC0041CD47 /* CancelBag.swift in Sources */,
-				D433AD7228FC37940041CD47 /* BloombergViewModel.swift in Sources */,
 				D433AD3928FC2F430041CD47 /* ServicesContainer.swift in Sources */,
 				D418BFDA28FD99F600263341 /* MockedData.swift in Sources */,
 				D433AD5528FC32030041CD47 /* Publisher+WeakAssign.swift in Sources */,
 				D478B05F28F56F55006333DB /* ContentView.swift in Sources */,
 				D433AD4B28FC31B40041CD47 /* LazyList.swift in Sources */,
 				D433AD2D28FC2EB50041CD47 /* Store.swift in Sources */,
-				D433AD4028FC30020041CD47 /* YahooFinanceService.swift in Sources */,
 				D4F1FCD7293FA60B00BBFCB2 /* SceneDelegate.swift in Sources */,
-				D433AD7028FC37530041CD47 /* YahooFinanceViewModel.swift in Sources */,
+				D4F1FCE1293FAD8100BBFCB2 /* CountryDetailsViewModel.swift in Sources */,
 				D433AD4D28FC31C20041CD47 /* APICall.swift in Sources */,
 				D433AD7C28FC39D80041CD47 /* CoreDataHelpers.swift in Sources */,
 				D433AD5128FC31E20041CD47 /* NetworkingHelpers.swift in Sources */,
 				D433AD5328FC31F20041CD47 /* Helpers.swift in Sources */,
 				D418BFE028FD9B6000263341 /* CountryCell.swift in Sources */,
-				D433AD4928FC30C40041CD47 /* YahooFinanceWebRepository.swift in Sources */,
-				D433AD4528FC30A90041CD47 /* BloombergWebRepository.swift in Sources */,
 				D433AD7A28FC39C90041CD47 /* CoreDataStack.swift in Sources */,
 				D433AD4F28FC31D30041CD47 /* WebRepository.swift in Sources */,
 				D4F1FCDB293FA9AB00BBFCB2 /* ApplicationMain.swift in Sources */,
+				D4F1FCDF293FAD7900BBFCB2 /* CountryDetails.swift in Sources */,
 				D418BFE228FD9B7100263341 /* DetailRow.swift in Sources */,
 				D418BFEA28FD9BA800263341 /* SearchBar.swift in Sources */,
 				D418BFEE28FD9BD600263341 /* ImageWebRepository.swift in Sources */,
-				D433AD3E28FC2FFA0041CD47 /* BloombergService.swift in Sources */,
-				D433AD4328FC309A0041CD47 /* BloombergDBRepository.swift in Sources */,
+				D4F1FCE9293FADFE00BBFCB2 /* CountriesService.swift in Sources */,
+				D4F1FCE5293FAD9300BBFCB2 /* CountriesListViewModel.swift in Sources */,
 				D418BFD628FD99D400263341 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

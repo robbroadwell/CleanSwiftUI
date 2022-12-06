@@ -1,27 +1,27 @@
 //
-//  YahooFinanceService.swift
+//  CountriesService.swift
 //  CleanSwiftUI
 //
-//  Created by Rob Broadwell on 10/16/22.
+//  Created by Rob Broadwell on 12/6/22.
 //
 
 import Combine
 import Foundation
 import SwiftUI
 
-protocol YahooFinanceService {
+protocol CountriesService {
     func refreshCountriesList() -> AnyPublisher<Void, Error>
     func load(countries: LoadableSubject<LazyList<Country>>, search: String, locale: Locale)
     func load(countryDetails: LoadableSubject<Country.Details>, country: Country)
 }
 
-struct RealYahooFinanceService: YahooFinanceService {
+struct RealCountriesService: CountriesService {
     
-    let webRepository:YahooFinanceWebRepository
-    let dbRepository: YahooFinanceDBRepository
+    let webRepository: CountriesWebRepository
+    let dbRepository: CountriesDBRepository
     let appState: Store<AppState>
     
-    init(webRepository: YahooFinanceWebRepository, dbRepository: YahooFinanceDBRepository, appState: Store<AppState>) {
+    init(webRepository: CountriesWebRepository, dbRepository: CountriesDBRepository, appState: Store<AppState>) {
         self.webRepository = webRepository
         self.dbRepository = dbRepository
         self.appState = appState
@@ -94,7 +94,7 @@ struct RealYahooFinanceService: YahooFinanceService {
     }
 }
 
-struct StubYahooFinanceService: YahooFinanceService {
+struct StubCountriesService: CountriesService {
     
     func refreshCountriesList() -> AnyPublisher<Void, Error> {
         return Just<Void>.withErrorType(Error.self)

@@ -1,19 +1,19 @@
 //
-//  YahooFinanceWebRepository.swift
+//  CountriesWebRepository.swift
 //  CleanSwiftUI
 //
-//  Created by Rob Broadwell on 10/16/22.
+//  Created by Rob Broadwell on 12/6/22.
 //
 
 import Combine
 import Foundation
 
-protocol YahooFinanceWebRepository: WebRepository {
+protocol CountriesWebRepository: WebRepository {
     func loadCountries() -> AnyPublisher<[Country], Error>
     func loadCountryDetails(country: Country) -> AnyPublisher<Country.Details.Intermediate, Error>
 }
 
-struct RealYahooFinanceWebRepository: YahooFinanceWebRepository {
+struct RealCountriesWebRepository: CountriesWebRepository {
     
     let session: URLSession
     let baseURL: String
@@ -42,14 +42,14 @@ struct RealYahooFinanceWebRepository: YahooFinanceWebRepository {
 
 // MARK: - Endpoints
 
-extension RealYahooFinanceWebRepository {
+extension RealCountriesWebRepository {
     enum API {
         case allCountries
         case countryDetails(Country)
     }
 }
 
-extension RealYahooFinanceWebRepository.API: APICall {
+extension RealCountriesWebRepository.API: APICall {
     var path: String {
         switch self {
         case .allCountries:
@@ -72,5 +72,3 @@ extension RealYahooFinanceWebRepository.API: APICall {
         return nil
     }
 }
-
-

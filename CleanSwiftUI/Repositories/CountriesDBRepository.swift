@@ -1,14 +1,14 @@
 //
-//  BloombergDBRepository.swift
+//  CountriesDBRepository.swift
 //  CleanSwiftUI
 //
-//  Created by Rob Broadwell on 10/16/22.
+//  Created by Rob Broadwell on 12/6/22.
 //
 
 import CoreData
 import Combine
 
-protocol BloombergDBRepository {
+protocol CountriesDBRepository {
     func hasLoadedCountries() -> AnyPublisher<Bool, Error>
     
     func store(countries: [Country]) -> AnyPublisher<Void, Error>
@@ -19,7 +19,7 @@ protocol BloombergDBRepository {
     func countryDetails(country: Country) -> AnyPublisher<Country.Details?, Error>
 }
 
-struct RealBloombergDBRepository: BloombergDBRepository {
+struct RealCountriesDBRepository: CountriesDBRepository {
     
     let persistentStore: PersistentStore
     
@@ -117,4 +117,3 @@ extension CountryDetailsMO {
         return request
     }
 }
-

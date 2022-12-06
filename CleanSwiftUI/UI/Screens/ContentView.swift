@@ -20,7 +20,7 @@ struct ContentView: View {
             if viewModel.isRunningTests {
                 Text("Running unit tests")
             } else {
-                YahooFinanceView(viewModel: .init(container: viewModel.container))
+                CountriesList(viewModel: .init(container: viewModel.container))
                     .attachEnvironmentOverrides(onChange: viewModel.onChangeHandler)
                     .modifier(RootViewAppearance(viewModel: .init(container: viewModel.container)))
             }

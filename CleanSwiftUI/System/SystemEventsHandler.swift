@@ -93,7 +93,7 @@ struct RealSystemEventsHandler: SystemEventsHandler {
     
     func appDidReceiveRemoteNotification(payload: NotificationPayload,
                                          fetchCompletion: @escaping FetchCompletion) {
-        container.services.bloombergService
+        container.services.countriesService
             .refreshCountriesList()
             .sinkToResult { result in
                 fetchCompletion(result.isSuccess ? .newData : .failed)

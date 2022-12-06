@@ -28,8 +28,8 @@ extension AppState {
 
 extension AppState {
     struct ViewRouting: Equatable {
-        var yahooView = YahooFinanceView.Routing()
-        var bloombergView = BloombergView.Routing()
+        var countriesList = CountriesList.Routing()
+        var countryDetails = CountryDetails.Routing()
     }
 }
 

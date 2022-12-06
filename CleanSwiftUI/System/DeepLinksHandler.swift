@@ -45,8 +45,8 @@ struct RealDeepLinksHandler: DeepLinksHandler {
         case let .showCountryFlag(alpha3Code):
             let routeToDestination = {
                 self.container.appState.bulkUpdate {
-                    $0.routing.yahooView.countryDetails = alpha3Code
-//                    $0.routing.countryDetails.detailsSheet = true
+                    $0.routing.countriesList.countryDetails = alpha3Code
+                    $0.routing.countryDetails.detailsSheet = true
                 }
             }
             /*
@@ -64,4 +64,3 @@ struct RealDeepLinksHandler: DeepLinksHandler {
         }
     }
 }
-

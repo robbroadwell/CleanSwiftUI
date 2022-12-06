@@ -1,13 +1,14 @@
 //
-//  YahooFinanceView.swift
+//  CountriesList.swift
 //  CleanSwiftUI
 //
-//  Created by Rob Broadwell on 10/16/22.
+//  Created by Rob Broadwell on 12/6/22.
 //
 
 import SwiftUI
+import Combine
 
-struct YahooFinanceView: View {
+struct CountriesList: View {
     
     @ObservedObject private(set) var viewModel: ViewModel
     @Environment(\.locale) private var locale: Locale
@@ -18,8 +19,9 @@ struct YahooFinanceView: View {
             NavigationView {
                 self.content
                     .navigationBarItems(trailing: self.permissionsButton)
-                    .navigationBarTitle("YahooFinance")
+                    .navigationBarTitle("Countries")
                     .navigationBarHidden(self.viewModel.countriesSearch.keyboardHeight > 0)
+                    .animation(.easeOut, value: 0.3)
             }
             .navigationViewStyle(DoubleColumnNavigationViewStyle())
         }
@@ -53,7 +55,7 @@ struct YahooFinanceView: View {
 
 // MARK: - Loading Content
 
-private extension YahooFinanceView {
+private extension CountriesList {
     var notRequestedView: some View {
         Text("").onAppear(perform: self.viewModel.reloadCountries)
     }
@@ -75,7 +77,7 @@ private extension YahooFinanceView {
 
 // MARK: - Displaying Content
 
-private extension YahooFinanceView {
+private extension CountriesList {
     func loadedView(_ countries: LazyList<Country>, showSearch: Bool, showLoading: Bool) -> some View {
         VStack {
             if showSearch {
@@ -98,7 +100,7 @@ private extension YahooFinanceView {
     }
     
     func detailsView(country: Country) -> some View {
-        YahooFinanceView(viewModel: .init(container: viewModel.container))
+        CountryDetails(viewModel: .init(container: viewModel.container, country: country))
     }
     
     var bottomInset: CGFloat {
@@ -113,9 +115,10 @@ private extension YahooFinanceView {
 // MARK: - Preview
 
 #if DEBUG
-struct YahooFinanceView_Previews: PreviewProvider {
+struct CountriesList_Previews: PreviewProvider {
     static var previews: some View {
-        YahooFinanceView(viewModel: .init(container: .preview))
+        CountriesList(viewModel: .init(container: .preview))
     }
 }
 #endif
+

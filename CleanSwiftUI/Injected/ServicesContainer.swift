@@ -7,26 +7,22 @@
 
 extension DIContainer {
     struct Services {
-        let bloombergService: BloombergService
-        let yahooFinanceService: YahooFinanceService
-        let userPermissionsService: UserPermissionsService
+        let countriesService: CountriesService
         let imagesService: ImagesService
+        let userPermissionsService: UserPermissionsService
         
-        init(bloombergService: BloombergService,
-             yahooFinanceService: YahooFinanceService,
-             userPermissionsService: UserPermissionsService,
-             imagesService: ImagesService) {
-            self.bloombergService = bloombergService
-            self.yahooFinanceService = yahooFinanceService
-            self.userPermissionsService = userPermissionsService
+        init(countriesService: CountriesService,
+             imagesService: ImagesService,
+             userPermissionsService: UserPermissionsService) {
+            self.countriesService = countriesService
             self.imagesService = imagesService
+            self.userPermissionsService = userPermissionsService
         }
         
         static var stub: Self {
-            .init(bloombergService: StubBloombergService(),
-                  yahooFinanceService: StubYahooFinanceService(),
-                  userPermissionsService: StubUserPermissionsService(),
-                  imagesService: StubImagesService())
+            .init(countriesService: StubCountriesService(),
+                  imagesService: StubImagesService(),
+                  userPermissionsService: StubUserPermissionsService())
         }
     }
 }

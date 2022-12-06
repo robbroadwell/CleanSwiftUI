@@ -1,17 +1,16 @@
 //
-//  BloombergViewModel.swift
+//  CountriesListViewModel.swift
 //  CleanSwiftUI
 //
-//  Created by Rob Broadwell on 10/16/22.
+//  Created by Rob Broadwell on 12/6/22.
 //
-
 
 import SwiftUI
 import Combine
 
 // MARK: - Routing
 
-extension BloombergView {
+extension CountriesList {
     struct Routing: Equatable {
         var countryDetails: Country.Code?
     }
@@ -19,7 +18,7 @@ extension BloombergView {
 
 // MARK: - Search State
 
-extension BloombergView {
+extension CountriesList {
     struct CountriesSearch {
         var searchText: String = ""
         var keyboardHeight: CGFloat = 0
@@ -29,7 +28,7 @@ extension BloombergView {
 
 // MARK: - ViewModel
 
-extension BloombergView {
+extension CountriesList {
     class ViewModel: ObservableObject {
         
         // State
@@ -45,17 +44,17 @@ extension BloombergView {
         init(container: DIContainer, countries: Loadable<LazyList<Country>> = .notRequested) {
             self.container = container
             let appState = container.appState
-            _routingState = .init(initialValue: appState.value.routing.bloombergView)
+            _routingState = .init(initialValue: appState.value.routing.countriesList)
             _countries = .init(initialValue: countries)
             cancelBag.collect {
-//                $routingState
-//                    .sink { appState[\.routing.countriesList] = $0 }
-//                appState.map(\.routing.countriesList)
-//                    .removeDuplicates()
-//                    .weakAssign(to: \.routingState, on: self)
-//                appState.updates(for: AppState.permissionKeyPath(for: .pushNotifications))
-//                    .map { $0 == .notRequested || $0 == .denied }
-//                    .weakAssign(to: \.canRequestPushPermission, on: self)
+                $routingState
+                    .sink { appState[\.routing.countriesList] = $0 }
+                appState.map(\.routing.countriesList)
+                    .removeDuplicates()
+                    .weakAssign(to: \.routingState, on: self)
+                appState.updates(for: AppState.permissionKeyPath(for: .pushNotifications))
+                    .map { $0 == .notRequested || $0 == .denied }
+                    .weakAssign(to: \.canRequestPushPermission, on: self)
             }
         }
         
@@ -66,7 +65,7 @@ extension BloombergView {
         // MARK: - Side Effects
         
         func reloadCountries() {
-            container.services.bloombergService
+            container.services.countriesService
                 .load(countries: loadableSubject(\.countries),
                       search: countriesSearch.searchText,
                       locale: countriesSearch.locale)
@@ -81,7 +80,7 @@ extension BloombergView {
 
 // MARK: - Locale Reader
 
-extension BloombergView {
+extension CountriesList {
     struct LocaleReader: EnvironmentalModifier {
         
         let viewModel: ViewModel
@@ -100,3 +99,4 @@ extension BloombergView {
         }
     }
 }
+
