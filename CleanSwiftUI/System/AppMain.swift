@@ -8,14 +8,14 @@
 import SwiftUI
 
 @main
-struct ApplicationMain: App {
+struct AppMain: App {
     @UIApplicationDelegateAdaptor var delegate: AppDelegate
     
     let environment = AppEnvironment.bootstrap()
     
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: ContentView.ViewModel(container: environment.container))
+            ContentView(viewModel: .init(container: environment.container))
         }
     }
 }

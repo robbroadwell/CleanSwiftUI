@@ -86,7 +86,9 @@ extension CountriesList {
         let viewModel: ViewModel
         
         func resolve(in environment: EnvironmentValues) -> some ViewModifier {
-            viewModel.countriesSearch.locale = environment.locale
+            DispatchQueue.main.async {
+                viewModel.countriesSearch.locale = environment.locale
+            }
             return DummyViewModifier()
         }
         

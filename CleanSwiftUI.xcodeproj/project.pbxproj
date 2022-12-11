@@ -51,7 +51,7 @@
 		D4D6928F293FA13D00D6ADBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D6928D293FA13500D6ADBC /* XCTest.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Required, ); }; };
 		D4F1FCD7293FA60B00BBFCB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCD6293FA60B00BBFCB2 /* SceneDelegate.swift */; };
 		D4F1FCD9293FA69800BBFCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCD8293FA69800BBFCB2 /* AppDelegate.swift */; };
-		D4F1FCDB293FA9AB00BBFCB2 /* ApplicationMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCDA293FA9AB00BBFCB2 /* ApplicationMain.swift */; };
+		D4F1FCDB293FA9AB00BBFCB2 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCDA293FA9AB00BBFCB2 /* AppMain.swift */; };
 		D4F1FCDF293FAD7900BBFCB2 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCDE293FAD7900BBFCB2 /* CountryDetails.swift */; };
 		D4F1FCE1293FAD8100BBFCB2 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCE0293FAD8100BBFCB2 /* CountryDetailsViewModel.swift */; };
 		D4F1FCE3293FAD8B00BBFCB2 /* CountriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1FCE2293FAD8B00BBFCB2 /* CountriesList.swift */; };
@@ -125,7 +125,7 @@
 		D4D6928D293FA13500D6ADBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D4F1FCD6293FA60B00BBFCB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D4F1FCD8293FA69800BBFCB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4F1FCDA293FA9AB00BBFCB2 /* ApplicationMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMain.swift; sourceTree = "<group>"; };
+		D4F1FCDA293FA9AB00BBFCB2 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		D4F1FCDE293FAD7900BBFCB2 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
 		D4F1FCE0293FAD8100BBFCB2 /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
 		D4F1FCE2293FAD8B00BBFCB2 /* CountriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesList.swift; sourceTree = "<group>"; };
@@ -226,10 +226,10 @@
 		D433AD4128FC30840041CD47 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				D4F1FCEC293FAE3B00BBFCB2 /* CountriesWebRepository.swift */,
 				D4F1FCEA293FAE2700BBFCB2 /* CountriesDBRepository.swift */,
 				D433AD6228FC35910041CD47 /* PushTokenWebRepository.swift */,
 				D418BFED28FD9BD600263341 /* ImageWebRepository.swift */,
-				D4F1FCEC293FAE3B00BBFCB2 /* CountriesWebRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -237,10 +237,10 @@
 		D433AD5828FC34F60041CD47 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				D4F1FCDA293FA9AB00BBFCB2 /* ApplicationMain.swift */,
+				D4F1FCDA293FA9AB00BBFCB2 /* AppMain.swift */,
 				D4F1FCD8293FA69800BBFCB2 /* AppDelegate.swift */,
-				D4F1FCD6293FA60B00BBFCB2 /* SceneDelegate.swift */,
 				D433AD2928FC2DE40041CD47 /* AppEnvironment.swift */,
+				D4F1FCD6293FA60B00BBFCB2 /* SceneDelegate.swift */,
 				D433AD5C28FC354E0041CD47 /* PushNotificationsHandler.swift */,
 				D433AD5E28FC355E0041CD47 /* DeepLinksHandler.swift */,
 				D433AD6028FC35720041CD47 /* SystemEventsHandler.swift */,
@@ -541,7 +541,7 @@
 				D418BFE028FD9B6000263341 /* CountryCell.swift in Sources */,
 				D433AD7A28FC39C90041CD47 /* CoreDataStack.swift in Sources */,
 				D433AD4F28FC31D30041CD47 /* WebRepository.swift in Sources */,
-				D4F1FCDB293FA9AB00BBFCB2 /* ApplicationMain.swift in Sources */,
+				D4F1FCDB293FA9AB00BBFCB2 /* AppMain.swift in Sources */,
 				D4F1FCDF293FAD7900BBFCB2 /* CountryDetails.swift in Sources */,
 				D418BFE228FD9B7100263341 /* DetailRow.swift in Sources */,
 				D418BFEA28FD9BA800263341 /* SearchBar.swift in Sources */,

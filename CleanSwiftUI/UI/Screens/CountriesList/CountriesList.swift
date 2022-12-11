@@ -16,14 +16,13 @@ struct CountriesList: View {
     
     var body: some View {
         GeometryReader { geometry in
-            NavigationView {
+            NavigationStack {
                 self.content
                     .navigationBarItems(trailing: self.permissionsButton)
                     .navigationBarTitle("Countries")
                     .navigationBarHidden(self.viewModel.countriesSearch.keyboardHeight > 0)
                     .animation(.easeOut, value: 0.3)
             }
-            .navigationViewStyle(DoubleColumnNavigationViewStyle())
         }
         .modifier(viewModel.localeReader)
         .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
@@ -80,22 +79,25 @@ private extension CountriesList {
 private extension CountriesList {
     func loadedView(_ countries: LazyList<Country>, showSearch: Bool, showLoading: Bool) -> some View {
         VStack {
+            
             if showSearch {
                 SearchBar(text: $viewModel.countriesSearch.searchText.onSet({ _ in
                     self.viewModel.reloadCountries()
                 }))
             }
+            
             if showLoading {
                 ActivityIndicatorView().padding()
             }
+            
             List(countries) { country in
-                NavigationLink(
-                    destination: self.detailsView(country: country),
-                    tag: country.alpha3Code,
-                    selection: self.$viewModel.routingState.countryDetails) {
-                        CountryCell(country: country)
-                    }
+                NavigationLink {
+                    self.detailsView(country: country)
+                } label: {
+                    CountryCell(country: country)
+                }
             }
+            
         }.padding(.bottom, bottomInset)
     }
     
