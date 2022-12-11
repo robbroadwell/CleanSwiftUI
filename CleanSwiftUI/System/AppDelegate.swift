@@ -42,9 +42,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func sceneDelegate(_ application: UIApplication) -> SceneDelegate? {
-        return application.windows
-            .compactMap({ $0.windowScene?.delegate as? SceneDelegate })
-            .first
+        if let window = UIApplication.shared.connectedScenes.map({ $0 as? UIWindowScene }).compactMap({ $0 }).first?.windows.first {
+            return window.windowScene?.delegate as? SceneDelegate
+        }
+        return nil
     }
     
     func application(
